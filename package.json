@@ -8,7 +8,9 @@
     "prod": "ng build --env=prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@angular/animations": "5.0.5",
@@ -30,7 +32,8 @@
     "express": "4.16.2",
     "rxjs": "5.5.3",
     "typescript": "2.4.2",
-    "zone.js": "0.8.18"
+    "zone.js": "0.8.18",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@angular/cli": "1.5.2",
@@ -56,5 +59,6 @@
   "engines": {
     "node": "6.11.1",
     "npm": "3.10.9"
-  }
+  },
+  "snyk": true
 }
